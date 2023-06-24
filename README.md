@@ -1,6 +1,7 @@
-Data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
-Attributes:
-Bank client data:
+# Data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
+
+## Attributes:
+### Bank Client Data:
 1 - age (numeric)
 
 2 - job : type of job (categorical: 'admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed','services','student','technician','unemployed','unknown')
@@ -15,7 +16,7 @@ Bank client data:
 
 7 - loan: has personal loan? (categorical: 'no','yes','unknown')
 
-Related with the last contact of the current campaign:
+### Related with the last contact of the current campaign:
 8 - contact: contact communication type (categorical: 'cellular','telephone')
 
 9 - month: last contact month of year (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')
@@ -24,7 +25,7 @@ Related with the last contact of the current campaign:
 
 11 - duration: last contact duration, in seconds (numeric). Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no'). Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to have a realistic predictive model.*
 
-Other attributes:
+### Other Attributes:
 12 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
 
 13 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric; 999 means client was not previously contacted)
@@ -33,7 +34,7 @@ Other attributes:
 
 15 - poutcome: outcome of the previous marketing campaign (categorical: 'failure','nonexistent','success')
 
-social and economic context attributes :
+### Social and Economic Context Attributes :
 16 - emp.var.rate: employment variation rate - quarterly indicator (numeric)
 
 17 - cons.price.idx: consumer price index - monthly indicator (numeric)
